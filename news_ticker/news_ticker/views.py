@@ -1,8 +1,10 @@
+import requests
+
 from django.http import JsonResponse
 from django.views import View
 from django.views.generic.base import TemplateView
 
-
+from news_ticker import settings
 
 class News(View):
     """
@@ -10,7 +12,11 @@ class News(View):
     """
     def get(self, request):
         n = request.GET.get('n', 5)
-        return JsonResponse({'news': []})
+        guardian_url = "https://content.guardianapis.com/search?api-key={}&page-size={}".format(settings.GUARDIAN_API_KEY, n)
+        resp = requests.get(guardian_url)
+        resp_json = resp.json()
+        print(resp_json)
+        return JsonResponse({'titles': [article['webTitle'] for article in resp_json['response']['results']]})
 
 
 class Home(TemplateView):
