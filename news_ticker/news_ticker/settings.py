@@ -120,3 +120,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# location(s) of static files locally
+STATICFILES_DIRS = [os.path.join('news_ticker', 'static')]
