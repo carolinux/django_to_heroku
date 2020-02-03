@@ -15,6 +15,8 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GUARDIAN_API_KEY = '94060ef3-c387-4835-98b2-26d79f6cb105'
+HOME_PAGE_NEWS_ITEMS = 15
+
 
 
 # Quick-start development settings - unsuitable for production
