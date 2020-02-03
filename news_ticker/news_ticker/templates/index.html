@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Top News</title>
-        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-        <meta name="description" content="Your page meta description here" />
 
-    </head>
-    <body>
-    <img src="{% static 'coffee-header.jpg' %}" />
-        <h1>Your content title here</h1>
-        <p>My long content will be here as well.</p>
-        <footer class="my_footer_class_here">
-            <p>{{ message }}</p>
-        </footer>
-    </body>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Freebie: 12 Practical Templates For List Pages</title>
+
+    <link rel="stylesheet" href="article-list-basic.css">
+
+   
+
+</head>
+<body>
+
+    <ul class="article-list-basic">
+
+        <li>
+            <a href="#">
+                <img src="assets/images/pictures/industrial-mech.jpg" alt="Industrial Mech" />
+            </a>
+            <div>
+                <h2><a href="#">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="#" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="assets/images/pictures/sahale-wa.jpg"  alt="Sahale Wa" />
+            </a>
+            <div>
+                <h2><a href="#">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="#" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="assets/images/pictures/sands-of-life.jpg"  alt="Sands of Life" />
+            </a>
+            <div>
+                <h2><a href="#">Interesting article title</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu lacus mattis laoreet diam a, volutpat magna.</p>
+                <a href="#" class="read-more">Read more &rarr;</a>
+            </div>
+        </li>
+
+    </ul>
+
+</body>
+
 </html>
